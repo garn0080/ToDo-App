@@ -1,38 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+*, html {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+  color: hsl(235, 19%, 35%)
+}
+
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(236, 33%, 92%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.banner {
+  background-image: url(./images/bg-desktop-light.jpg);
+  background-size: cover;
+  background-color: mediumblue;
+  height: 35%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  position: absolute;
+  text-align: left;
+  width: 37%;
+  top: 10%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 5px;
 }
