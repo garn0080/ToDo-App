@@ -3,12 +3,12 @@ import "./todoList.css";
 function TodoList({taskList}) {
 
     let listOfTasks = taskList.map((task) => (
-        <li id={task.id}>
+        <li key={task.id}>
           <div className="row">
-            <i class="fa-regular fa-circle fa-lg"></i>
+            <i className="fa-regular fa-circle fa-lg"></i>
             <p>{task.text}</p>
           </div>
-          <i id="deleteIcon" class="fa-solid fa-x deleteIcon"></i>
+          <i id="deleteIcon" className="fa-solid fa-x deleteIcon"></i>
         </li>
     ))
 
