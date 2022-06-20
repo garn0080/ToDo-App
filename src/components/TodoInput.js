@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./todoInput.css";
 
 function TodoInput({ setInput, input, setTaskList, taskList }) {
@@ -8,12 +7,18 @@ function TodoInput({ setInput, input, setTaskList, taskList }) {
 
   let handleSubmit = (ev) => {
     ev.preventDefault();
-    setTaskList([
-      { text: input, completed: false, id: Math.random() * 1000 },
-      ...taskList
-    ]);
 
-    setInput("");
+    // check if input is empty 1st
+    if (input !== "") {
+      setTaskList([
+        { text: input, completed: false, id: Math.floor(Math.random() * 100) },
+        ...taskList
+      ]);
+  
+      setInput("");
+    } else{
+      console.log("input empty");
+    }
   };
 
   return (

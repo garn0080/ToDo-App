@@ -43,29 +43,41 @@
 }
 .row p {
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .row svg {
-  color: hsl(233, 11%, 84%);
+  color: hsl(233, 11%, 84%); 
 }
 
 /* hover check circle icon */
 .row svg:hover {
-  /* color: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)); */
-  /* background: linear-gradient(#e66465, #9198e5);} */
+  color: hsl(280, 87%, 65%);
+  cursor: pointer;
 }
 
 /* hover x icon */
 .todoContainer li:hover .deleteIcon {
   visibility: visible;
+  cursor: pointer;
 }
-
-
 
 .deleteIcon {
   color:  hsl(236, 9%, 61%);
   visibility: hidden;
   transition-delay: 0.2;
+}
+
+.activeTab {
+  color: hsl(220, 98%, 61%) !important;
+}
+
+.filters p:hover {
+  color: hsl(235, 19%, 35%);
+}
+
+.completed:hover {
+  color: hsl(234, 11%, 52%);
 }
 
 .footer {
@@ -85,6 +97,7 @@
 .footer p {
   color: hsl(233, 4%, 65%);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .footer div {

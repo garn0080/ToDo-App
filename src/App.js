@@ -13,7 +13,7 @@ function App() {
     <div className='banner'></div>
     <div className='container'>
     <TodoInput setInput={setInput} input={input} setTaskList={setTaskList} taskList={taskList} />
-    <TodoList taskList={taskList} />
+    <TodoList taskList={taskList} setTaskList={setTaskList} />
     </div>
     </div>
   );
