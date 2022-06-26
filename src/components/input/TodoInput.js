@@ -1,6 +1,6 @@
 import "./todoInput.css";
 
-function TodoInput({ setInput, input, setTaskList, taskList }) {
+function TodoInput({ setInput, input, setTodoList, todoList }) {
   let handleChange = (ev) => {
     setInput(ev.target.value);
   };
@@ -10,9 +10,9 @@ function TodoInput({ setInput, input, setTaskList, taskList }) {
 
     // check if input is empty 1st
     if (input !== "") {
-      setTaskList([
+      setTodoList([
         { text: input, completed: false, id: Math.floor(Math.random() * 100) },
-        ...taskList
+        ...todoList
       ]);
   
       setInput("");

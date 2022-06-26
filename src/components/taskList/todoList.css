@@ -1,4 +1,3 @@
-
 .row {
   display: flex;
   flex-direction: row;
@@ -11,7 +10,6 @@
   background-color: hsl(0, 0%, 98%);
   width: 100%;
   margin-top: 25px;
-  /* min-height: 550px; */
   border-radius: 5px 5px 0px 0px;
   box-shadow: 3px 10px 30px rgba(204, 204, 204, 0.488);
 
@@ -44,16 +42,11 @@
 .row p {
   margin-left: 20px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .row svg {
-  color: hsl(233, 11%, 84%); 
-}
-
-/* hover check circle icon */
-.row svg:hover {
-  color: hsl(280, 87%, 65%);
-  cursor: pointer;
+  color: hsl(233, 11%, 84%);
 }
 
 /* hover x icon */
@@ -63,11 +56,12 @@
 }
 
 .deleteIcon {
-  color:  hsl(236, 9%, 61%);
+  color: hsl(236, 9%, 61%);
   visibility: hidden;
   transition-delay: 0.2;
 }
 
+/* FOOTER  */
 .activeTab {
   color: hsl(220, 98%, 61%) !important;
 }
@@ -108,4 +102,3 @@
 .footer div > p {
   margin: 0px 10px;
 }
-

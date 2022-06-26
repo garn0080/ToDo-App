@@ -1,0 +1,37 @@
+.completed {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.circle::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f111";
+  font-weight: 400;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.check::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f058";
+  font-weight: 900;
+  background: rgb(87, 221, 255); 
+  background: linear-gradient(
+    140deg,
+    rgba(87, 221, 255, 1) 0%,
+    rgba(192, 88, 243, 1) 100%
+  );
+    background-clip: text;
+  -webkit-text-fill-color:transparent; 
+}
+
+/* hover check circle icon */
+.icon:hover {
+  color: hsl(280, 87%, 65%);
+  cursor: pointer;
+}
