@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 import "./todo.css";
 
-function Todo({ todoList, setTodoList, setCompleted, todo }) {
+function Todo({ todoList, setTodoList, todo }) {
+  // setCompleted
 
   //DELETE A TASK
   let deleteTodo = (e) => {
