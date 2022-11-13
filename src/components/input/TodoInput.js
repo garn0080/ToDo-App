@@ -11,7 +11,7 @@ function TodoInput({ setInput, input, setTodoList, todoList }) {
     // check if input is empty 1st
     if (input !== "") {
       setTodoList([
-        { text: input, completed: false, id: Math.floor(Math.random() * 100) },
+        { text: input, completed: false, id: Math.floor(Math.random() * 10000) },
         ...todoList
       ]);
   

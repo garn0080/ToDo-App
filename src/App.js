@@ -7,15 +7,14 @@ function App() {
   // list of tasks
   const [input, setInput] = useState("")
   const [todoList, setTodoList] = useState([]);
-  // const [completed, setCompleted] = useState([]);
+  const [completed, setCompleted] = useState(false);
 
   return (
     <div className="App">
     <div className='banner'></div>
     <div className='container'>
     <TodoInput setInput={setInput} input={input} setTodoList={setTodoList} todoList={todoList}/>
-    <TodoList todoList={todoList} setTodoList={setTodoList}/> 
-    {/* setCompleted={setCompleted} */}
+    <TodoList todoList={todoList} setTodoList={setTodoList} setCompleted={setCompleted} completed={completed}/> 
     </div>
     </div>
   );

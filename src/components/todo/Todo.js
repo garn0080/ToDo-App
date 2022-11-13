@@ -34,10 +34,14 @@ function Todo({ todoList, setTodoList, todo }) {
   };
 
   return (
-    <li id={todo.id}>
+    <li id={todo.id} data-status={todo.completed ? "completed" : "incompleted"}>
       <div className="row">
-        <div className={`icon ${todo.completed ? "check" : "circle"}`} onClick={completTodo}></div>
-        <p className={`${todo.completed ? "completed" : ""}`}>{todo.text}</p>
+        <div
+          className={`icon ${todo.completed ? "check" : "circle"}`}
+          onClick={completTodo}
+        ></div>
+        {/* <p className={`${todo.completed ? "completed" : "incompleted"}`}>{todo.text}</p> */}
+        <p>{todo.text}</p>
       </div>
       <div onClick={deleteTodo}>
         <i id="deleteIcon" className="fa-solid fa-x deleteIcon"></i>
